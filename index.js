@@ -8,7 +8,7 @@ const bodyParser = require("body-parser")
 const authentiation = require('./routes/authentication')(router)
 const blogs = require('./routes/blog')(router)
 const cors = require("cors")
-const port= process.env.PORT || 8085
+const port= process.env.PORT || 8086
 
 mongoose.Promise = global.Promise
 mongoose.connect(config.uri,  {
